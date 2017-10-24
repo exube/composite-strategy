@@ -4,7 +4,7 @@
 #include "container.h"
 class BubbleSort : public Sort {
     public:
-        BubbleSort();
+        BubbleSort() {};
 
         void sort(Container* container);
 };
