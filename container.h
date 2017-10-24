@@ -1,6 +1,8 @@
 #ifndef __CONTAINER_H__
 #define __CONTAINER_H__
+#include "component.h"
 
+#include <cstddef>
 class Container {
     protected: 
         Sort* sort_function;

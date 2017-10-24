@@ -7,7 +7,7 @@ class BubbleSort : public Sort {
         BubbleSort();
 
         void sort(Container* container);
-}
+};
 
 
 #endif
