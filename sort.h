@@ -5,7 +5,7 @@ class Container;
 
 class Sort {
     public:
-        Sort();
+        Sort() {};
         
         virtual void sort(Container* container) = 0;
 };

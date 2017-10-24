@@ -21,6 +21,12 @@ void VectorContainer::swap(int i, int j) {
     std::swap(this->datatree.at(i), this->datatree.at(j));
 }
 
+Base* VectorContainer::at(int i) {
+    return this->datatree.at(i);
+}
+
 int VectorContainer::size() {
     return this->datatree.size();
 }
+
+void Container::set_sort_function(Sort* test) { this->sort_function = test; } ;

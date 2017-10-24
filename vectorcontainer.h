@@ -5,7 +5,7 @@
 #include "container.h"
 
 #include <vector>
-class VectorContainer : private Container {
+class VectorContainer : public Container {
     private:
         std::vector<Base*> datatree;
         
@@ -17,7 +17,7 @@ class VectorContainer : private Container {
         void print();
         void sort();
         void swap(int i, int j);
-        Base* at(int i) = 0;
+        Base* at(int i);
         int size();
 };
 

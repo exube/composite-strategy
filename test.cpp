@@ -1,9 +1,13 @@
 #include <iostream>
-#include "composite.h"
-#include "vector_container.h"
-#include "list_container.h"
-#include "strategy.h"
-
+#include "component.h"
+#include "vectorcontainer.h"
+#include "listcontainer.h"
+#include "sort.h"
+#include "selectionsort.h"
+//#include ".h"
+#define Mult Multiply
+#define Sub Subtract
+//#define Sqr Square
 using namespace std;
 
 int main() {

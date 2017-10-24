@@ -10,8 +10,8 @@ class ListContainer : public Container {
         std::list<Base*> datatree;
         
     public:
-        ListContainer() : sort_function(NULL) {}
-        ListContainer(Sort* func) : sort_function(function){}
+        ListContainer() : Container() {};
+        ListContainer(Sort* func) : Container(func){};
 
         void add_element(Base* element);
         void print();

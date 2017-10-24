@@ -24,5 +24,6 @@ void SelectionSort::sort(Container* container) {
 }
             
 
-    
+SelectionSort::SelectionSort() {};
+//void SelectionSort::set_sort_function(Sort* test) : sort_function(test) {};
   
