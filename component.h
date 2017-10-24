@@ -18,7 +18,7 @@ class Op : public Base {
         
         double evaluate();
             
-}
+};
 
 class Multiply : public Base {
     private:
@@ -28,7 +28,7 @@ class Multiply : public Base {
         Multiply( Base* l, Base* r ) : left(l), right(r) {}
 
         double evaluate();
-}
+};
 
 
 class Divide : public Base {
@@ -39,7 +39,7 @@ class Divide : public Base {
         Divide( Base* l, Base* r ) : left(l), right(r) {}
 
         double evaluate();
-}
+};
 class Add : public Base {
     private:
         Base* left;
@@ -48,7 +48,7 @@ class Add : public Base {
         Add( Base* l, Base* r ) : left(l), right(r) {}
 
         double evaluate();
-}
+};
 class Subtract : public Base {
     private:
         Base* left;
@@ -57,5 +57,5 @@ class Subtract : public Base {
         Subtract( Base* l, Base* r ) : left(l), right(r) {}
 
         double evaluate();
-}
+};
 #endif // __COMPONENT_H__
