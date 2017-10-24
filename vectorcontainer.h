@@ -5,13 +5,13 @@
 #include "container.h"
 
 #include <vector>
-class VectorContainer : public Container {
+class VectorContainer : private Container {
     private:
         std::vector<Base*> datatree;
         
     public:
-        VectorContainer() : sort_function(NULL) {}
-        VectorContainer(Sort* func) : sort_function(function){}
+        VectorContainer() : Container() {};
+        VectorContainer(Sort* func) : Container(func){};
 
         void add_element(Base* element);
         void print();
