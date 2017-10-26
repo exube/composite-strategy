@@ -5,20 +5,20 @@ void SelectionSort::sort(Container* container) {
     int size = container->size();
     
     for (int i = 0; i < size; i++) {
-        int largest = 0;
+        int largest_index = i;
 
         // Get the largest remaining element
         for (int j = i; j < size; j++) {
-            if (container->at(largest)->evaluate() < container->at(j)->evaluate()) {
-                largest = j;
+            if (container->at(largest_index)->evaluate() < container->at(j)->evaluate()) {
+                largest_index = j;
             }
         }
       
-        // If the largest is larger than current element, swap
+        // If the $largest_index is larger than current element, swap
 
-        if (container->at(largest)->evaluate() > container->at(i)->evaluate()) {
-            container->swap(i, largest);
-        }
+        //if (container->at(largest_index)->evaluate() > container->at(i)->evaluate()) {
+            container->swap(i, largest_index);
+        //}
 
     }
 }
