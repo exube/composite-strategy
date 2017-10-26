@@ -10,6 +10,7 @@ void ListContainer::print() {
     auto it = this->datatree.begin();
     while (it != this->datatree.end()) {
         std::cout << (*it)->evaluate() << " ";
+        it++;
     }
 }
 
