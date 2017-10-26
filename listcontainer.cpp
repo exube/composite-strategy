@@ -36,9 +36,7 @@ void ListContainer::swap(int i, int j) {
     for (int k = 0; k < j; k++) {
         it2++;
     }
-    Base* left = this->at(i);
-    Base* right = this->at(j);
-    std::swap(left, right);
+    std::swap(*it1, *it2);
 }
 
 int ListContainer::size() {
