@@ -20,8 +20,8 @@ int main() {
     Add* C = new Add(A, B);
     Sqr* D = new Sqr(C);
 
-    VectorContainer* container = new VectorContainer();
-    //ListContainer* container = new ListContainer();
+    //VectorContainer* container = new VectorContainer();
+    ListContainer* container = new ListContainer();
     container->add_element(A);
     container->add_element(B);
     container->add_element(D);

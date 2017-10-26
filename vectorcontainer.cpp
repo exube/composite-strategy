@@ -7,7 +7,7 @@ void VectorContainer::add_element(Base* element) {
 }
 
 void VectorContainer::print() {
-    for (int i = 0; i < this->datatree.size(); i++) {
+    for (unsigned i = 0; i < this->datatree.size(); i++) {
         std::cout << datatree[i]->evaluate() << " ";
     }
 }
