@@ -58,4 +58,12 @@ class Subtract : public Base {
 
         double evaluate();
 };
+class Sqr : public Base {
+    private:
+        Base* left;
+    public:
+        Sqr( Base* l ) : left(l) {}
+
+        double evaluate();
+};
 #endif // __COMPONENT_H__

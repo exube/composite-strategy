@@ -16,3 +16,7 @@ double Add::evaluate() {
 double Subtract::evaluate() { 
     return this->left->evaluate() - this->right->evaluate(); 
 }
+
+double Sqr::evaluate() {
+    return this->left->evaluate() * this->left->evaluate();
+}

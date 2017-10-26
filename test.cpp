@@ -1,9 +1,14 @@
 #include <iostream>
-#include "composite.h"
-#include "vector_container.h"
-#include "list_container.h"
-#include "strategy.h"
-
+#include "component.h"
+#include "vectorcontainer.h"
+#include "listcontainer.h"
+#include "sort.h"
+#include "selectionsort.h"
+#include "bubblesort.h"
+//#include ".h"
+#define Mult Multiply
+#define Sub Subtract
+//#define Sqr Square
 using namespace std;
 
 int main() {
@@ -16,15 +21,32 @@ int main() {
     Add* C = new Add(A, B);
     Sqr* D = new Sqr(C);
 
-    VectorContainer* container = new VectorContainer();
-    //ListContainer* container = new ListContainer();
-    container->add_element(A);
-    container->add_element(B);
-    container->add_element(D);
+    Container* container[2]; 
+    container[0] = new VectorContainer();
+    container[1] = new ListContainer();
+
+    container[0]->add_element(A);
+    container[0]->add_element(B);
+    container[0]->add_element(C);
+    container[0]->add_element(D);
+
+    container[1]->add_element(A);
+    container[1]->add_element(B);
+    container[1]->add_element(C);
+    container[1]->add_element(D);
+
     cout << "Container Before Sort: " << endl;
-    container->print();
-    container->set_sort_function(new SelectionSort());
-    container->sort();	
+    container[0]->print();
+    container[0]->set_sort_function(new SelectionSort());
+    container[0]->sort();	
     cout << "Container After Sort: " << endl;
-    container->print();
+    container[0]->print();
+    
+    cout << "Container before sort: " << endl;
+    container[1]->print();
+    container[1]->set_sort_function(new BubbleSort());
+    container[1]->sort();
+    cout << "Container after sort: " << endl;
+    container[1]->print();
+    return 0;
 };

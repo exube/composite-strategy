@@ -1,6 +1,9 @@
 #ifndef __CONTAINER_H__
 #define __CONTAINER_H__
+#include "component.h"
+#include <cstddef>
 
+class Sort;
 class Container {
     protected: 
         Sort* sort_function;
@@ -8,7 +11,7 @@ class Container {
     public: 
         /* Cosntructors */
         Container() : sort_function(NULL) { }
-        Container(Sort* function); 
+        Container(Sort* function) : sort_function(function) {}; 
 
         /* Non Virtual Functions */
         // Set the type of sorting algorithm
