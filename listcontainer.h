@@ -17,7 +17,7 @@ class ListContainer : public Container {
         void print();
         void sort();
         void swap(int i, int j);
-        Base* at(int i) = 0;
+        Base* at(int i);
         int size();
 };
 

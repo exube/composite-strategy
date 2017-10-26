@@ -29,14 +29,15 @@ Base* ListContainer::at(int i) {
 void ListContainer::swap(int i, int j) {
     auto it1 = this->datatree.begin(); 
     for (int k = 0; k < i; k++) {
-        it++;
+        it1++;
     }
     auto it2 = this->datatree.begin(); 
-    for (int k = 0; k < i; k++) {
-        it++;
+    for (int k = 0; k < j; k++) {
+        it2++;
     }
-    Base* asdf =
-    this->at(i);
+    Base* left = this->at(i);
+    Base* right = this->at(j);
+    std::swap(left, right);
 }
 
 int ListContainer::size() {
