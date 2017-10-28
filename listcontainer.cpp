@@ -12,6 +12,7 @@ void ListContainer::print() {
         std::cout << (*it)->evaluate() << " ";
         it++;
     }
+    std::cout << std::endl;
 }
 
 void ListContainer::sort() {

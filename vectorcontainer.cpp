@@ -10,6 +10,7 @@ void VectorContainer::print() {
     for (unsigned i = 0; i < this->datatree.size(); i++) {
         std::cout << datatree[i]->evaluate() << " ";
     }
+    std::cout << std::endl;
 }
 
 void VectorContainer::sort() {
